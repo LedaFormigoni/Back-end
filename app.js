@@ -1,25 +1,22 @@
 import express from "express";
 import cors from "cors";
-import { listaProdutos } from "../Back-end/front-end/produtos.js";
+import { listaProdutos } from "./produtos.js";
 
 const app = express();
-
 app.use(cors());
 app.use(express.json());
 
-let listaPessoas = [
-  { id: 1, nome: "Bruno", idade: 26 },
-  { id: 2, nome: "Bruno", idade: 16 },
-  { id: 3, nome: "Arthur", idade: 16 },
-  { id: 4, nome: "Arthur", idade: 16 },
-  { id: 5, nome: "Leda", idade: 17},   
-];
+// Rota para trazer todos os produtos
+app.get("/produtos", (requisicao, resposta) => {
+  return resposta.status(200).json(listaProdutos);
+});
 
-app.get("/perfil", (requisicao, resposta) => {
-    return resposta.status(200).json(listaProdutos);       
+app.get("/produtos/:id", (req, res) => {
+  const { id } = req.params;
+  const produto = listaProdutos.find((p) => p.id == id);
+  return res.status(200).json(produto);
 });
 
 app.listen(3000, () => {
   console.log("No ar!");
 });
-
