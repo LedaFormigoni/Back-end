@@ -1,57 +1,88 @@
-export const listaProdutos = [ 
+// class Produtos {
+//   constructor(imagem, titulo, preco) {
+//     this.imagem = imagem;
+//     this.titulo = titulo;
+//     this.preco = preco;
+//   }
+// }
 
-  { id: 1,
-    desrição: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',              
-    imagem: "https://cdn.awsli.com.br/771/771904/produto/112008063/676cb959c6.jpg", 
-    titulo: "Sela de montaria", 
-    preco: 1.796, 
-  }, 
+// const listaProdutos = [
+//   new Produtos("https://picsum.photos/id/1/200/300", "Pasta de dente", 5.5),
+//   new Produtos("https://picsum.photos/id/1/200/300", "Pasta de dente", 5.5),
+//   new Produtos("https://picsum.photos/id/1/200/300", "Pasta de dente", 5.5),
+// ];
 
-  { 
-     id: 2,
-    desrição: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum', 
-    imagem: "https://cdn.iset.io/assets/66687/produtos/18226/f0a92318daa98b9804ee59920c4ffc8f670feb7c037d1.png", 
-    titulo: "Cabresto", 
-    preco: 237.63, 
-  }, 
-
-  { 
-     id: 3,
-    desrição: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum', 
-    imagem: "https://cdn.iset.io/assets/66687/produtos/20255/64e7b99ed0d24a093d4011aa4916ba156683ec2528409.png", 
-    titulo: "Rédeas", 
-    preco: 76.05, 
-  }, 
-
-  { 
-     id: 4,
-    desrição: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum', 
-    imagem: "https://cdn.iset.io/assets/66687/produtos/17887/ae4c1de946f14de1605c7f0527e8709a67103032af93f.png", 
-    titulo: "Mantas", 
-    preco: 696.72, 
-  }, 
-
-  { 
-     id: 5,
-    desrição: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum', 
-    imagem: "https://images.tcdn.com.br/img/img_prod/631369/caneleira_vtr_atria_fecho_a_pino_387_1_92b14d314dcee6f94e482ff1eb9382f7.png", 
-    titulo: "Caneleiras", 
-    preco: 239.90, 
-  }, 
-
-  { 
-     id: 6,
-    desrição: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum', 
-    imagem: "https://images.tcdn.com.br/img/img_prod/781629/freio_duro_para_cavalo_de_inox_com_perna_s_e_bocal_medio_de_ferro_517_2_f8bf434dff30264898d624c8889c8216.jpg", 
-    titulo: "Freios", 
-    preco: 215.79, 
-  }, 
-
-  { 
-     id: 7,
-    desrição: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum', 
-    imagem: "https://cdn.shoppub.io/cdn-cgi/image/w=600,h=600,q=80,f=auto/cavalaria/media/uploads/produtos/foto/bvsihptk/barrigueira-para-cavalo-larga-air-max-refil-preto.jpeg", 
-    titulo: "Barrigueira", 
-    preco: 317.90, 
-  }, 
-]; 
+export const listaProdutos = [
+  {
+    id: 1,
+    descricao:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis scelerisque quam in dignissim. Donec tristique et massa vel tempus. Integer tempus, magna ac vehicula finibus, lectus orci ornare mi, sed venenatis elit arcu sodales magna. Fusce mattis, justo eu dictum venenatis, justo lacus interdum ipsum, et tempor ipsum eros sit amet leo. Nam dapibus, risus ut tincidunt gravida, ipsum metus porta lorem, ac tincidunt arcu nisl ut leo. Cras faucibus purus ut commodo suscipit. Curabitur nec turpis id augue cursus suscipit quis quis libero. Suspendisse gravida nunc mauris, a fringilla tellus fermentum eu. Praesent in turpis ex. ",
+    imagem: "https://picsum.photos/id/1/200/300",
+    titulo: "Pasta de dente",
+    preco: 5.5,
+  },
+  {
+    id: 2,
+    descricao:
+      "Vestibulum turpis nisl, ullamcorper a lacinia sed, sollicitudin sed dui. Praesent vitae maximus arcu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce ornare felis nec tristique fermentum. Duis ac risus ac magna vehicula pharetra at a tortor. Nam eros arcu, laoreet eget venenatis vitae, tempor sit amet ipsum. Fusce aliquet accumsan augue, quis finibus ante dictum id. Suspendisse potenti. Ut lacinia turpis eu purus laoreet, in tincidunt purus bibendum.",
+    imagem: "https://picsum.photos/id/2/200/300",
+    titulo: "Coca-cola 250ml",
+    preco: 4.5,
+  },
+  {
+    id: 3,
+    descricao:
+      "Nam vel ultricies est. Etiam purus ex, molestie sit amet lectus nec, tempus tempor elit. Curabitur ut tincidunt diam. Mauris sed turpis eget sapien suscipit tincidunt ac id ante. Vivamus id sapien tincidunt tellus imperdiet pretium nec eu arcu. Donec ac lobortis tortor. Ut ut dolor in nisi porta efficitur. Duis vulputate nisi in nisi aliquam tempor. Fusce ultricies eget orci et maximus. Aenean quam tellus, ullamcorper a ornare quis, varius eget lacus. Integer dolor lacus, fermentum id massa et, hendrerit ullamcorper mauris. ",
+    imagem: "https://picsum.photos/id/3/200/300",
+    titulo: "Iphone 14",
+    preco: 5000,
+  },
+  {
+    id: 4,
+    descricao:
+      "Morbi sodales, tortor et mattis facilisis, risus ante porttitor ante, ac aliquam enim risus ut est. Praesent et tempor nunc, a imperdiet velit. Suspendisse ac lacus mattis ipsum suscipit ornare. Nullam at venenatis neque, quis aliquet eros. Donec at tortor nibh. Curabitur sit amet ipsum ullamcorper, scelerisque est ut, tincidunt justo. Morbi id leo felis. ",
+    imagem: "https://picsum.photos/id/4/200/300",
+    titulo: "Iphone 14",
+    preco: 5000,
+  },
+  {
+    id: 5,
+    descricao:
+      "Suspendisse nec cursus tellus, sed faucibus mauris. Sed hendrerit, tortor vel ultrices commodo, nunc mi semper leo, sollicitudin finibus eros lacus ut nulla. Vivamus sagittis id dui eu malesuada. Nulla facilisi. Fusce ut orci sagittis lectus accumsan vulputate. Mauris placerat tortor non ligula ultricies, et finibus mi sagittis. Mauris convallis ac neque et fermentum. Nullam elementum quam quis enim egestas iaculis. Nullam metus lacus, lobortis eget quam ut, venenatis hendrerit mi. Maecenas nec dapibus libero. Etiam condimentum lorem vel mi vehicula, at aliquam sem dictum.",
+    imagem: "https://picsum.photos/id/5/200/300",
+    titulo: "Iphone 14",
+    preco: 5000,
+  },
+  {
+    id: 6,
+    descricao:
+      "Suspendisse nec cursus tellus, sed faucibus mauris. Sed hendrerit, tortor vel ultrices commodo, nunc mi semper leo, sollicitudin finibus eros lacus ut nulla. Vivamus sagittis id dui eu malesuada. Nulla facilisi. Fusce ut orci sagittis lectus accumsan vulputate. Mauris placerat tortor non ligula ultricies, et finibus mi sagittis. Mauris convallis ac neque et fermentum. Nullam elementum quam quis enim egestas iaculis. Nullam metus lacus, lobortis eget quam ut, venenatis hendrerit mi. Maecenas nec dapibus libero. Etiam condimentum lorem vel mi vehicula, at aliquam sem dictum.",
+    imagem: "https://picsum.photos/id/5/200/300",
+    titulo: "Iphone 14",
+    preco: 5000,
+  },
+  {
+    id: 7,
+    descricao:
+      "Suspendisse nec cursus tellus, sed faucibus mauris. Sed hendrerit, tortor vel ultrices commodo, nunc mi semper leo, sollicitudin finibus eros lacus ut nulla. Vivamus sagittis id dui eu malesuada. Nulla facilisi. Fusce ut orci sagittis lectus accumsan vulputate. Mauris placerat tortor non ligula ultricies, et finibus mi sagittis. Mauris convallis ac neque et fermentum. Nullam elementum quam quis enim egestas iaculis. Nullam metus lacus, lobortis eget quam ut, venenatis hendrerit mi. Maecenas nec dapibus libero. Etiam condimentum lorem vel mi vehicula, at aliquam sem dictum.",
+    imagem: "https://picsum.photos/id/5/200/300",
+    titulo: "Iphone 14",
+    preco: 5000,
+  },
+  {
+    id: 8,
+    descricao:
+      "Suspendisse nec cursus tellus, sed faucibus mauris. Sed hendrerit, tortor vel ultrices commodo, nunc mi semper leo, sollicitudin finibus eros lacus ut nulla. Vivamus sagittis id dui eu malesuada. Nulla facilisi. Fusce ut orci sagittis lectus accumsan vulputate. Mauris placerat tortor non ligula ultricies, et finibus mi sagittis. Mauris convallis ac neque et fermentum. Nullam elementum quam quis enim egestas iaculis. Nullam metus lacus, lobortis eget quam ut, venenatis hendrerit mi. Maecenas nec dapibus libero. Etiam condimentum lorem vel mi vehicula, at aliquam sem dictum.",
+    imagem: "https://picsum.photos/id/5/200/300",
+    titulo: "Iphone 14",
+    preco: 5000,
+  },
+  {
+    id: 9,
+    descricao:
+      "Suspendisse nec cursus tellus, sed faucibus mauris. Sed hendrerit, tortor vel ultrices commodo, nunc mi semper leo, sollicitudin finibus eros lacus ut nulla. Vivamus sagittis id dui eu malesuada. Nulla facilisi. Fusce ut orci sagittis lectus accumsan vulputate. Mauris placerat tortor non ligula ultricies, et finibus mi sagittis. Mauris convallis ac neque et fermentum. Nullam elementum quam quis enim egestas iaculis. Nullam metus lacus, lobortis eget quam ut, venenatis hendrerit mi. Maecenas nec dapibus libero. Etiam condimentum lorem vel mi vehicula, at aliquam sem dictum.",
+    imagem: "https://picsum.photos/id/5/200/300",
+    titulo: "Iphone 14",
+    preco: 5000,
+  },
+];
