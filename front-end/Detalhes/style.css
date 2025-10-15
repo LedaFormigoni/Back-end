@@ -12,17 +12,6 @@ body {
   font-size: 62.5%;
 }
 
-img{
-  height: 645px;
-  width: 500px;
-  border-radius: 25px;
-  transition: transform 0.2s;
-}
-img:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
-
 #root {
   width: 100%;
   height: 100%;
@@ -36,7 +25,11 @@ img:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
+img {
+  width: 500px;
+  height: 650px;
 }
 
 #direita {
@@ -48,52 +41,43 @@ img:hover {
 }
 
 #conteudo {
-  border-radius: 100px;
+  background-color: aqua;
   height: 650px;
-  width: 70%;
+  width: 500px;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(175, 207, 234, 0.862);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 h1 {
   font-size: 40px;
+  background-color: blue;
+
   flex: 1;
   width: 100%;
-  border-radius: 100px 100px 0 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(29, 43, 134);
-  color: white; 
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 p {
-  font-size: 20px;
-  margin: 0 50px 0 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 18px;
+  background-color: brown;
+
   flex: 3;
+  width: 100%;
+  word-wrap: break-word;
+  text-align: justify;
 }
 
 h3 {
+  background-color: chartreuse;
+  font-size: 30px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 40px;
   flex: 1;
-  transition: transform 0.2s;
-  margin-bottom: 15px;
-  width: 150px;
+  width: 100%;
 }
 
-h3:hover {
-  transform: scale(1.1);
-  cursor: pointer;
+button {
+  flex: 1;
+  width: 100%;
 }
